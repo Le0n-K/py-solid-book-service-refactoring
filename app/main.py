@@ -18,6 +18,8 @@ def main(book: Book, commands: list[tuple[str, str]]) -> None | str:
 
 
 if __name__ == "__main__":
-    sample_book = Book(title="Sample Book", content="This is some sample content.")
+    sample_book = Book(
+        title="Sample Book", content="This is some sample content."
+    )
     sample_book.save()
     print(main(sample_book, [("display", "reverse"), ("serialize", "xml")]))
